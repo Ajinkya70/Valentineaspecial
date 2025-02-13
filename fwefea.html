@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body
+        {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header
+        {
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+        }
+        .gallery
+        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img
+        {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .paint-brush
+        {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #666;
+        }
+        .content
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content img
+        {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .text
+        {
+            max-width: 600px;
+        }
+        .buttons
+        {
+            margin-top: 20px;
+        }
+        .buttons button
+        {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .buttons button:hover
+        {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>
+                Be My Valentine?</h1>
+            <img src="Img/frbfrbhewb.jpeg" style="height: 500px; width: 400px;" alt="Main Artwork"
+                class="main-image">
+            <p>
+                Yami, this is your official invitation to say 'Yes' in the most dramatic way possible!</p>
+            <div class="buttons">
+                <button onclick="sendWhatsApp('Yesss! (Like, duh!)')">
+                    Yesss! </button>
+                <button onclick="sendWhatsApp('Definitely YES! (No doubts at all!)')">
+                    Definitely YES! (No doubts at all!)</button>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2025 Created By Your Boy!!!. All rights reserved.
+        </div>
+    </div>
+    <script>
+        function sendWhatsApp(choice) {
+            var message = encodeURIComponent("PHASSSS GAYIIIII!");
+            var phoneNumber = "9819413273";
+            var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+            window.open(url, '_blank');
+        }
+</script>
+</body>
+</html>
